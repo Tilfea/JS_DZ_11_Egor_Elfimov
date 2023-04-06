@@ -62,31 +62,53 @@
     </script>
     <p>Седьмое задание</p>
     <script>
-      let n = 1000;
+      let n1 = 1000;
       let num = 0;
-      while (n > 50) {
-        n /= 2;
+      while (n1 > 50) {
+        n1 /= 2;
         num += 1;
       }
-      document.write(`n = ${n}, num=${num}`);
+      document.write(`n = ${n1}, num=${num}`);
     </script>
     <p>Восьмое задание</p>
     <script>
-      let total = 0;
+      let total1 = 0;
       let sr = 0;
       let a = 0;
       while (true) {
-        a = +prompt("Введите значение", a);
+        a = +prompt("Введите значение для задания 8", a);
         if (!a) {
           break;
         }
-        total += a;
+        total1 += a;
         sr += 1;
       }
       document.write(
         `количество итераций равно ${sr}, среднее арифметическое введённых чисел равна ${
-          total / sr
+          total1 / sr
         }`
+      );
+    </script>
+    <p>Девятое задание</p>
+    <script>
+      let n3 = "4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57"
+      let min1 = 0;
+      let max1 = 0;
+      for () {}
+    </script>
+    <p>Десятое задание</p>
+    <script>
+      let n2 = 0;
+      let total2 = "";
+      let sum = 0;
+      n2 = prompt("Введите число для задания 10", n2);
+      let len = n2.length;
+      for (i = len - 1; i >= 0; i--) {
+        sum += +n2[i];
+        total2 += n2[i];
+      }
+      document.write(
+        `Число ${n2} состоит из следующих цифр ${total2}, оно состоит из ${len} цифр, их сумма равна ${sum}`
       );
     </script>
   </body>
