@@ -5,10 +5,6 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <p> задание</p>
-    <script>
-      for () {}
-    </script> -->
     <p>Первое задание</p>
     <script>
       for (i = 1; i < 50; i++) {
@@ -92,9 +88,18 @@
     <p>Девятое задание</p>
     <script>
       let n3 = "4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57"
-      let min1 = 0;
+      let min1 = 1;
       let max1 = 0;
-      for () {}
+      let n4 = n3.split(' ')
+      for (i = 0; i < n4.length; i++) {
+        if (n4[i]< min1) {
+          min1 = n4[i]
+        }
+        if (n4[i] > max1) {
+          max1 = n4[i]
+        }
+      }
+      document.write(`минимальное значение в строке равно ${min1}, максимальное значение в строке равно ${max1}`)
     </script>
     <p>Десятое задание</p>
     <script>
